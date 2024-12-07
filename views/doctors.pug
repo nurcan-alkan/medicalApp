@@ -1,0 +1,9 @@
+extends layout 
+block content 
+  h2 Doctors 
+    p There are #{doctors.length} doctors waiting.
+
+    ol 
+      each doctor in doctors 
+        li 
+          a (href=`/doctors/${doctor.id}`) #{doctor.name}

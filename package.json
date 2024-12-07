@@ -1,0 +1,22 @@
+{
+  "name": "medical-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "author": "\"Nurcan Alkan <nurcanalkan639@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "flatted": "^3.3.1",
+    "pug": "^3.0.3",
+    "uuid": "^11.0.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

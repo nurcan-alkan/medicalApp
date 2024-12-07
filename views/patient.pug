@@ -1,0 +1,12 @@
+extends layout 
+block content
+  h2 Patient Detail 
+  p #{patient.name}
+
+  h3 Booking History 
+  if patient.bookings.length 
+    ol 
+      each bookings in patient.bookings 
+        li From #{booking.hospital}
+  else 
+      p No bookings 

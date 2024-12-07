@@ -1,0 +1,10 @@
+extends layout 
+block content  
+  h2 Patients 
+    p There are #{patients.length} patients waiting.
+
+    ol 
+      each patient in patients 
+        li
+          a(href=`/patients/${patient.id}`) #{patient.name}
+        
